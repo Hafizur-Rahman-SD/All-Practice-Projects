@@ -41,3 +41,6 @@ else:
 
     else:
         print("Something went wrong!")
+
+# This code implements a simple game of Water-Snake-Gun where the user plays against the computer.
+# The user inputs their choice, and the computer randomly selects one of the three options.
