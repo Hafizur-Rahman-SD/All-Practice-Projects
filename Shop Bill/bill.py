@@ -4,7 +4,7 @@ print("===== Welcome to Hafizur's Shop =====")
 
 # Input from user
 customer_name = input("Enter Customer Name: ")
-product_name = input("Enter Product Name: ")
+product_name = input("Enter Product Name or code: ")
 price_per_item = float(input("Enter Price per Item (Taka): "))
 quantity = int(input("Enter Quantity: "))
 
