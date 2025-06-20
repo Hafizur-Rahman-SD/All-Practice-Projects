@@ -9,6 +9,7 @@ price_per_item = float(input("Enter Price per Item (Taka)/$: "))
 quantity = int(input("Enter Quantity: "))
 
 # Calculate total
+#hre are formula to calculate total
 total = price_per_item * quantity
 
 # Optional: Add VAT or Discount
