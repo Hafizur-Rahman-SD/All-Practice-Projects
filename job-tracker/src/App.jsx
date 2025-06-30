@@ -1,6 +1,4 @@
 
-
-
 import React, { useState } from "react";
 import JobFrom from "./components/JobFrom";
 import FilterBar from "./components/FilterBar";
