@@ -1,3 +1,21 @@
+/**
+
+ * This is the main React component of the Job Application Tracker.
+ *
+ * Features:
+ * - Manages the list of job applications with a `jobs` state.
+ * - Allows adding new jobs through the JobForm component.
+ * - Allows deleting jobs through the JobList component.
+ * - Uses a `currentFilter` state to filter jobs by status (e.g., "all", "applied", "rejected").
+ * - Displays filtered jobs dynamically based on the selected filter.
+ * - Connects three child components: FilterBar (to change filters), JobForm (to add jobs), and JobList (to display and delete jobs).
+ * 
+ * The code uses React hooks (`useState`) for state management and organizes components in a simple, clean structure.
+ * 
+ * Author: [Hafizur Rahman SD]
+ */
+
+
 
 import React, { useState } from "react";
 import JobFrom from "./components/JobFrom";
@@ -32,6 +50,7 @@ function App() {
   return (
     <div className="container">
       <h1>🎯 Job Application Tracker</h1>
+      <h2>Hafizur Rahman</h2>
       <p>
         Keep track of your job applications and their statuses. Add, filter, and
         delete jobs easily.
