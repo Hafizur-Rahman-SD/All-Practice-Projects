@@ -7,7 +7,7 @@ function JobForm({ onAddJob }) {
   const [position, setPosition] = useState("");
   const [status, setStatus] = useState("Applied");
 
-  // নতুন state যোগ করলাম DateTime এর জন্য
+  // add new state for DateTime.
   const [dateTime, setDateTime] = useState("");
 
   const handleSubmit = (e) => {
