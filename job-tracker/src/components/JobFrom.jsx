@@ -14,7 +14,7 @@ function JobForm({ onAddJob }) {
     e.preventDefault();
     if (!companyName || !position) return;
 
-    // onAddJob কল করার সময় নতুন ফিল্ড ও পাঠাবো
+    // when add call onAddJob and it get new field.
     onAddJob({ companyName, position, status, dateTime });
 
     // ইনপুট ফিল্ডগুলো রিসেট করবো
