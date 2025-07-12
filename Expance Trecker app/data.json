@@ -1,0 +1,54 @@
+{
+    "income": [
+        {
+            "amount": 5000,
+            "note": "Freelance project",
+            "date": "01 July 2025",
+            "time": "10:30 AM"
+        },
+        {
+            "amount": 12000,
+            "note": "Part-time job",
+            "date": "03 July 2025",
+            "time": "01:15 PM"
+        },
+        {
+            "amount": 2500,
+            "note": "Online course refund",
+            "date": "07 July 2025",
+            "time": "09:45 AM"
+        },
+        {
+            "amount": 3000,
+            "note": "Sold old phone",
+            "date": "10 July 2025",
+            "time": "04:20 PM"
+        }
+    ],
+    "expense": [
+        {
+            "amount": 800,
+            "note": "Food & snacks",
+            "date": "02 July 2025",
+            "time": "02:00 PM"
+        },
+        {
+            "amount": 1500,
+            "note": "Internet bill",
+            "date": "04 July 2025",
+            "time": "11:30 AM"
+        },
+        {
+            "amount": 4500,
+            "note": "Course fee",
+            "date": "05 July 2025",
+            "time": "03:50 PM"
+        },
+        {
+            "amount": 200,
+            "note": "Bus fare",
+            "date": "09 July 2025",
+            "time": "09:00 AM"
+        }
+    ]
+}
