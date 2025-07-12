@@ -7,14 +7,14 @@ function JobForm({ onAddJob }) {
   const [position, setPosition] = useState("");
   const [status, setStatus] = useState("Applied");
 
-  // নতুন state যোগ করলাম DateTime এর জন্য
+  // add new state for DateTime.
   const [dateTime, setDateTime] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!companyName || !position) return;
 
-    // onAddJob কল করার সময় নতুন ফিল্ড ও পাঠাবো
+    // when add call onAddJob and it get new field.
     onAddJob({ companyName, position, status, dateTime });
 
     // ইনপুট ফিল্ডগুলো রিসেট করবো
