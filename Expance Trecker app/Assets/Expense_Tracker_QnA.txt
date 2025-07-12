@@ -1,0 +1,151 @@
+
+Expense Tracker App (Tkinter + JSON)
+Some Questions with Answers
+------------------------------------------------------------
+
+🧠 General Project Questions:
+------------------------------------------------------------
+
+1. What is the purpose of your Expense Tracker app?
+Answer: The purpose is to help users keep track of their income and expenses in a simple, offline desktop application using Python. It helps visualize daily transactions and monthly summaries.
+
+2. What technologies did you use to build it?
+Answer: I used Python, Tkinter for the GUI, JSON for data storage, and PyInstaller for creating a .exe file. I also used some basic file handling and time modules.
+
+3. How does your app work from a user’s perspective?
+Answer: Users can add income and expenses with a note. The app automatically saves the date and time. All data can be viewed in a table and a monthly report summarizes the total income, expense, and balance.
+
+4. Why did you use Tkinter instead of other GUI frameworks?
+Answer: Tkinter is built-in with Python, easy to learn, and perfect for simple GUI projects like this one. It allowed me to quickly build forms and tables.
+
+5. How is data stored in your app?
+Answer: All data is stored in a local JSON file (`data.json`). It stores income and expense lists with amount, note, date, and time.
+
+6. What challenges did you face while building this app?
+Answer: Managing the JSON file structure, implementing a dynamic table view, handling delete operations safely, and formatting the time in AM/PM were a few challenges.
+
+------------------------------------------------------------
+
+🖥️ Python & Tkinter Related Questions:
+------------------------------------------------------------
+
+7. What is Tkinter and how does it work in Python?
+Answer: Tkinter is Python’s standard GUI toolkit. It helps create windows, buttons, labels, entry fields, and more to make interactive desktop applications.
+
+8. How did you create GUI elements like buttons and labels?
+Answer: Using Tkinter widgets like Button, Label, Entry, Frame, and Treeview from ttk. Each widget is placed inside the main window using pack() or grid().
+
+9. How did you manage layouts (pack/grid/place)?
+Answer: I mostly used the `pack()` method for simple vertical layout, and sometimes `grid()` for structured layouts.
+
+10. How do you handle button click events in Tkinter?
+Answer: By assigning a command function to the button’s `command=` argument. For example, `Button(root, text="Add", command=add_data)`.
+
+11. How did you display data in a table (Treeview)?
+Answer: I used `ttk.Treeview` to create a table, define columns, and insert data rows from the JSON file.
+
+12. How did you make the GUI look clean and user-friendly?
+Answer: I used proper spacing, padding, font settings, and grouped related widgets into frames for better organization.
+
+------------------------------------------------------------
+
+📂 File Handling & Data Storage:
+------------------------------------------------------------
+
+13. Why did you choose JSON for data storage?
+Answer: JSON is lightweight, human-readable, and easy to use with Python's built-in `json` module. It was perfect for small-scale local data storage.
+
+14. How do you read and write to the JSON file?
+Answer: I used `json.load()` to read and `json.dump()` to write data. I also used file operations with `open()` to access the file.
+
+15. What happens if the JSON file is empty or doesn't exist?
+Answer: I used a try-except block to check if the file exists or is empty. If not found, a default structure is created and saved.
+
+16. How do you delete an entry from the JSON file?
+Answer: On selecting an item in the table and clicking delete, the corresponding item is removed from the JSON structure and the file is updated.
+
+------------------------------------------------------------
+
+🕒 Date & Time Features:
+------------------------------------------------------------
+
+17. How do you store the date and time for each transaction?
+Answer: I used Python's `datetime.now()` to capture current date and time, and formatted them into readable formats like "11 July 2025", "03:45 PM".
+
+18. How did you format time as AM/PM in your app?
+Answer: I used `strftime('%I:%M %p')` which gives time in 12-hour format with AM/PM.
+
+------------------------------------------------------------
+
+📦 Packaging and Deployment:
+------------------------------------------------------------
+
+19. How did you convert your Python app to an .exe file?
+Answer: I used PyInstaller with the command:  
+`pyinstaller --onefile --windowed --icon=app_icon.ico main.py`
+
+20. What is PyInstaller and how does it work?
+Answer: PyInstaller bundles a Python application and all its dependencies into a single executable file, so users can run it without installing Python.
+
+21. How did you add an icon to your .exe file?
+Answer: I used the `--icon=app_icon.ico` flag while building the exe with PyInstaller.
+
+------------------------------------------------------------
+
+📈 Features & Functionality:
+------------------------------------------------------------
+
+22. How did you implement the monthly report feature?
+Answer: I looped through the stored data and filtered entries by the selected month, then calculated total income, total expense, and balance.
+
+23. Can users edit or update data?
+Answer: Currently, users can add and delete data. Update/edit functionality can be added in the future.
+
+24. How do you validate user inputs?
+Answer: I check if the input fields are empty and ensure amount fields only accept numbers before saving.
+
+------------------------------------------------------------
+
+🧪 Testing & Improvement:
+------------------------------------------------------------
+
+25. How did you test your app before finalizing?
+Answer: I tested the app using dummy data, checking all operations like add, delete, display, and report generation.
+
+26. What improvements would you make in the future?
+Answer: I plan to add CSV export, pie chart summary, better input validation, and a login system.
+
+27. If you were to use a database, which one would you choose and why?
+Answer: I would use SQLite because it’s lightweight, doesn’t need a server, and works great for small desktop apps.
+
+------------------------------------------------------------
+
+🌐 GitHub & Collaboration:
+------------------------------------------------------------
+
+28. What files did you upload to GitHub and why?
+Answer: I uploaded all source code files, README.md, icon file, and optionally a sample JSON. I excluded build folders using .gitignore.
+
+29. What is the purpose of the README.md file?
+Answer: It explains the project, features, how to run, technologies used, and future improvements. It helps others understand the codebase.
+
+30. What is .gitignore and why is it important?
+Answer: It lists files/folders Git should ignore, such as `__pycache__`, `dist/`, and `.spec`, to keep the repo clean and light.
+
+------------------------------------------------------------
+
+✅ Bonus (Advanced):
+------------------------------------------------------------
+
+31. How would you turn this into a web app?
+Answer: I would use Flask or Django for backend and HTML/CSS/JS for frontend. Data can be stored in a database like SQLite or PostgreSQL.
+
+32. Can this app be connected to an SQL database?
+Answer: Yes, the data logic can be adapted to use SQLite or MySQL with the help of Python’s `sqlite3` or `SQLAlchemy`.
+
+33. How would you make this app mobile-friendly?
+Answer: By using a framework like Kivy for native Python mobile apps, or fully rebuild as a web app and host it with responsive design.
+
+34. How would you implement user login and authentication?
+Answer: I can create a simple login screen and use hashed passwords stored locally or in a secure database, and restrict access to user-specific data.
+
