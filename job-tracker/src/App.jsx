@@ -22,7 +22,7 @@ import JobFrom from "./components/JobFrom";
 import FilterBar from "./components/FilterBar";
 import JobList from "./components/JobList";
 import { saveJobs, loadJobs } from "./Utils/storage";
-
+import Navbar from "./components/Navbar";
 
 function App() {
   const [jobs, setJobs] = useState([]);               // Job list state
@@ -48,7 +48,10 @@ function App() {
       : jobs.filter((job) => job.status === currentFilter);
 
   return (
-    <div className="container">
+     <div className="container">
+      {/* ✅ Navbar added here */}
+      <Navbar />
+    
       <h1>🎯 Job Application Tracker</h1>
       <h2>Hafizur Rahman</h2>
       <p>
