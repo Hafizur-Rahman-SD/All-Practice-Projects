@@ -17,7 +17,7 @@ function JobForm({ onAddJob }) {
     // when add call onAddJob and it get new field.
     onAddJob({ companyName, position, status, dateTime });
 
-    // ইনপুট ফিল্ডগুলো রিসেট করবো
+    // reset the interview from after submit
     setCompanyName("");
     setPosition("");
     setStatus("Applied");
@@ -47,7 +47,7 @@ function JobForm({ onAddJob }) {
         <option value="Rejected">Rejected</option>
       </select>
 
-      {/* নতুন Input Field: date & time */}
+      {/* new Input Field: date & time */}
       <input
         type="datetime-local"
         value={dateTime}
